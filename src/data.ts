@@ -1,0 +1,74 @@
+export const EMAIL=(import.meta.env.VITE_CONTACT_EMAIL as string)||'daksheshkumarsingh7290@gmail.com';
+export const WA=(import.meta.env.VITE_WHATSAPP_NUMBER as string)||'919729146058';
+export const waLink=(t:string)=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+export const IG=(import.meta.env.VITE_INSTAGRAM_URL as string)||'https://www.instagram.com/dakshesh.obsora/';
+export const NAV=[['about','About'],['services','Services'],['projects','Projects'],['obsora','OBSORA'],['process','Process'],['contact','Contact']] as const;
+export const TILES1=[['Web development','Sites that\nconvert.'],['SEO','Be found\nfirst.'],['AI chatbots','Answers\non tap.'],['Automation','Less busywork,\nmore growth.'],['Design','Details that\nbuild trust.'],['Performance','Fast on\nevery screen.']] as const;
+export const TILES2=[['Strategy','A clear plan,\nclear steps.'],['E-commerce','Browse to buy,\nsimply.'],['Integrations','Your tools,\nconnected.'],['Lead routing','Right enquiry,\nright person.'],['Growth','Built to keep\nmoving.'],['Support','Launch, then\nevolve.']] as const;
+export const OBSORA_URL='https://www.obsoradigital.com';
+export const OBSORA_IG='https://www.instagram.com/obsoradigital/';
+export const OBSORA_OPT='Other services via OBSORA Digital';
+export const OBSORA=[['Branding & identity','Logos and brand systems that give a business a clear, memorable look.'],['Content & social media','Posts, campaigns and content plans that keep your brand visible.'],['Business Meta ads','Targeted Facebook and Instagram ad campaigns that put your offer in front of the right audience.'],['Larger custom projects','Bigger, multi-discipline builds that need more than one person.']] as const;
+export const PRINCIPLES=[['Clarity first','Understand the real need before choosing the tools.'],['Built with intent','Every detail serves a purpose, not just a look.'],['Always improving','Test, learn and refine as the business evolves.']];
+export const SERVICES=[
+['Web Development','A fast, polished website that makes visitors trust you and take the next step.',['React','Responsive design','E-commerce','Performance'],'We agree the pages and goals first, then build in small reviewable pieces and test on real devices.'],
+['SEO & Digital Growth','Show up when customers search, with a site and content that search engines understand.',['Technical SEO','On-page SEO','Site structure','Growth strategy'],'We audit how the site is built and written today, then fix what stops the right people finding you.'],
+['AI & Chatbots','An assistant that answers common questions, captures enquiries and hands over to you when it matters.',['AI assistants','Chatbots','Knowledge bases','Integrations'],'We define what the assistant may answer, what it must pass on, and how a human takes over.'],
+['Business Automation','Cut repeat tasks out of your week — enquiries, follow-ups and reports that run on their own.',['Workflow design','Integrations','Lead routing','Process automation'],'We map one repeated task end to end, automate it, and add checks so nothing fails silently.']] as const;
+export type Project={key:string;status:'Live'|'In progress'|'Concept demo'|'Proof'|'Demonstration'|'Interactive chatbot';cat:string;name:string;blurb:string;pts:readonly string[];url?:string;img?:string;domain?:string;kind?:string};
+export const PROJECTS:Project[]=[
+{key:'cristova',status:'Live',cat:'Corporate website · Agriculture',name:'Cristova Biosciences',domain:'cristova.in',url:'https://cristova.in',img:'/projects/cristova.webp',blurb:'A corporate website for an agriculture company working in fodder, field crops and vegetables across several Indian states.',pts:['Product pages for vegetables, fodder and field crops','A route for dealer and distributor enquiries','Light, responsive design in the brand’s green palette']},
+{key:'decor',status:'In progress',cat:'E-commerce storefront · Home décor',name:'THE DECOR CULT',domain:'In development',img:'/projects/decor-cult.webp',blurb:'A storefront for wall art, canvas, frames, table décor, sculptural objects and mirrors.',pts:['Collections for each product type','Shipping offers shown in an announcement bar','A focused storefront that fits the screen cleanly']},
+{key:'peakdrop',status:'In progress',cat:'Brand website · Natural drinking water',name:'PeakDrop',domain:'In development',img:'/projects/peakdrop.webp',blurb:'A brand website for a natural drinking water brand, built around a cinematic mountain landscape.',pts:['Full-screen cinematic hero with the brand mark','Clear navigation: About, What we offer and Enquire','A clean, premium look for a natural drinking water brand']},
+{key:'auto',status:'Demonstration',kind:'auto',cat:'Business automation · n8n workflow',name:'Scheduling, messaging and tracking in one workflow',blurb:'One workflow that books the appointment, messages the client and tracks the booking, with a reminder before the day.',pts:['Scheduling: availability check, calendar event, reminder timing','Messaging: confirmation and reminder','Tracking: every booking logged and updated']},
+{key:'chat',status:'Interactive chatbot',kind:'chat',cat:'AI & chatbots · WhatsApp Business',name:'WhatsApp Business chatbot',blurb:'A simulated WhatsApp Business chatbot with quick replies, slot booking and handover to a person.',pts:['Quick-reply menu for common questions','Slot booking inside the chat','Handover to a person when needed']}];
+
+export const STEPS=[['Discover','Understand the business, audience and constraints.','We talk through your business, your audience and what you want the site or system to achieve, so the brief is clear before anything is built.'],['Define','Agree scope, structure and what good looks like.','We agree the pages or features, the structure and what success looks like, so there are no surprises later.'],['Build','Design and develop in small, reviewable pieces.','I design and develop in small pieces you can review along the way, instead of one big reveal at the end.'],['Refine','Test on real devices and tighten the details.','We test on real devices, tighten the details and fix what needs fixing before anything goes live.'],['Launch','Deploy, connect analytics and hand over.','The site goes live, analytics are connected and you get a simple handover so you know how everything works.'],['Evolve','Measure, learn and keep improving.','We look at how it performs and keep improving: new pages, better search visibility or more automation.']];
+export const FAQ=[
+['What can you build for me?','Websites and online stores, search (SEO) improvements, AI chat assistants and workflow automation. Tell me your goal — more enquiries, online sales, fewer repetitive tasks — and I’ll recommend the simplest build that gets you there, instead of selling you everything.'],
+['How do we start?','Message me on WhatsApp or send a mail with a few lines about what you need, who it’s for and any examples you like. I’ll reply, ask anything unclear, and agree the scope and next steps with you.'],
+['What do you need from me to get started?','Your goal, your audience and any examples you like. If you have them, your logo, brand colours, text and photos. If something is missing, we can plan around it.'],
+['How much does a project cost?','It depends on the number of pages or features, any integrations, and how much content is ready. Message me and I’ll reply with a clear quote. Mentioning a rough budget helps me suggest the right scope.'],
+['Can you improve my existing website?','Yes. Share your link and your goal in your message. I’ll look at speed, structure, search visibility and how it works on phones, then suggest whether to refine what you have or rebuild.'],
+['Do you also help with ads and branding?','Those go beyond my own services. For things like Meta ads, branding and content, I collaborate with OBSORA Digital. Tell me what you need and I’ll point you to the right support.']];
+
+export const ABOUT=[
+['Approach','Start with the goal.','I begin with what the business needs, then build the simplest thing that gets there. Every detail has to earn its place, and nothing is finished until it works well on real devices.',['Clarity first','Built with intent','Always improving']],
+['What I build','Four things, done properly.','Websites and online stores, search visibility, AI chat assistants and workflow automation, built to work together instead of as separate pieces.',['Web development','SEO','AI & chatbots','Automation']],
+['How we work','Clear, step by step.','You get a clear scope, small reviewable steps and plain-language updates, so you always know what happens next.',['Clear scope','Reviewable steps','Plain-language updates']],
+['Tools','What this site is built with.','This site is built with the tools I work with day to day.',['React','TypeScript','Tailwind CSS','Vite','Framer Motion']]] as const;
+
+export const LH_COLS=['First audit','After first fixes','After second fixes','Production build'] as const;
+export const LH_CORE=[['First Contentful Paint','9.5 s','10.6 s','2.0 s'],['Largest Contentful Paint','19.1 s','18.9 s','3.1 s'],['Total Blocking Time','1,060 ms','1,300 ms','50 ms'],['Cumulative Layout Shift','0.052','0.018','0'],['Speed Index','9.9 s','10.6 s','2.6 s']] as const;
+export const LH_DIAG=[['Total payload','4,843 KiB','3,599 KiB','3,519 KiB'],['Image delivery savings','297 KiB','89 KiB','8 KiB'],['JavaScript execution time','1.8 s','2.4 s','Not flagged'],['Main-thread work','5.9 s','6.5 s','Not flagged'],['Minify JavaScript savings','1,095 KiB','1,033 KiB','1,147 KiB'],['Unused JavaScript savings','781 KiB','688 KiB','765 KiB'],['Long main-thread tasks','Not reported','13','5'],['Non-composited animations','Not reported','2 elements','Not flagged'],['robots.txt errors','14','None reported','None reported'],['llms.txt','Not reported','Not following recommendations','Not flagged'],['ai-catalog.json','Not reported','Schema invalid','Not flagged'],['Optimize DOM size','Not reported','Not reported','Flagged'],['Third-party requests','Not reported','Not reported','Flagged'],['Layout shift culprits','Not reported','Not reported','Listed (CLS 0)']] as const;
+// After re-testing the production build, add results here by metric name, for example {'First Contentful Paint':'1.2 s'}. Missing entries show "Re-test pending".
+export const LH_PROD:Record<string,string>={};
+export const ISSUES=[
+['Images without explicit width and height','Added width and height to every image.','Confirmed fixed'],
+['Render-blocking requests (about 300 ms)','Fonts load without blocking the page, and unused font weights were removed.','Confirmed fixed'],
+['Elements using prohibited ARIA attributes','Removed the invalid label from the animated paragraph and added screen-reader text instead.','Confirmed fixed'],
+['robots.txt invalid (14 errors)','Added a valid robots.txt.','Confirmed fixed'],
+['Errors logged in the browser console','Added the missing favicon and app icons.','Confirmed fixed'],
+['Layout shift (CLS 0.052)','Fixed image sizes and font loading.','Improved: 0.052 → 0.018 → 0'],
+['Enormous network payload (4,843 KiB)','Images converted to WebP, and the hero video compressed from 28 MB to 0.34 MB and started after the page loads.','Improved: 4,843 → 3,599 → 3,519 KiB (development build)'],
+['Image delivery (297 KiB)','WebP images, smaller image sizes for smaller screens and a smaller logo file.','Improved: 297 → 89 → 8 KiB'],
+['JavaScript execution time (2.4 s) and main-thread work (6.5 s)','Removed an unused video-streaming library, switched the animation library to its lighter mode, and replaced the per-letter scroll animation with a single scroll listener.','No longer flagged in the latest run'],
+['Long main-thread tasks (13) and Total Blocking Time (1,300 ms)','The same changes as above.','Improved: 13 → 5 tasks, 1,300 → 50 ms'],
+['Non-composited animations (2 elements)','The light sweep and the pulsing dot now animate only transform and opacity.','Confirmed fixed'],
+['llms.txt does not follow recommendations','Added a valid llms.txt: a short Markdown summary of the site.','Confirmed fixed'],
+['ai-catalog.json schema is invalid','The site has no AI agents or tools to list, so no catalogue is published. The test server was answering that address with the web page, which is not valid JSON. It now answers "not found", which Lighthouse treats as not applicable.','Confirmed fixed'],
+['Third-party requests (fonts loaded from Google)','Fonts are now served from the site itself instead of Google Fonts.','Fix applied, re-test pending'],
+['Minify and unused JavaScript (1,147 KiB and 765 KiB)','These come from the development server, which does not minify. The production build is minified, so this needs the production re-test.','Open: needs a production re-test'],
+['Forced reflow','The About spotlight batches its updates, and the scroll-driven text uses one listener instead of one per letter.','Still listed in the latest run'],
+['Optimize DOM size','Not addressed yet. Next step: shorten the animated text and trim repeated elements.','Open']] as const;
+export const SEO_STEPS=[['Audit','Run Lighthouse and record every metric and failed check.'],['Diagnose','Group the findings: performance, accessibility, SEO basics and best practices.'],['Fix','Work through them by impact: payload first, then images, fonts and code.'],['Re-test','Run Lighthouse again on the production build and compare with the first report.']] as const;
+export const CHAT_STEPS=[['Map the conversation','List what customers ask most, and where a person should step in.'],['Write replies and buttons','Short answers with quick-reply buttons, so people tap instead of typing.'],['Set up WhatsApp Business','Greeting message, away message, quick replies and labels. A full chatbot connects the WhatsApp Business Platform through an automation tool.'],['Test every path','Try each branch on a real phone before it goes live.'],['Hand over to a person','Make it easy for a customer to reach a human when the bot can’t help.']] as const;
+export const NODES=[
+['New booking request','Trigger','Form or message','A website form, a WhatsApp message or a button starts the workflow.'],
+['Check availability','Scheduling','Calendar','Looks for a free slot so the same time is never booked twice.'],
+['Create event','Scheduling','Calendar','Adds the appointment to the calendar with the client’s details.'],
+['Send confirmation','Messaging','WhatsApp or email','Sends the client a confirmation straight away.'],
+['Log the booking','Tracking','Spreadsheet','Adds a row with the name, service, date and status.'],
+['Wait until the day before','Scheduling','Wait step','Pauses the workflow until it is time for a reminder.'],
+['Send reminder','Messaging','WhatsApp or email','Reminds the client about the appointment.'],
+['Update status','Tracking','Spreadsheet','Marks the booking as reminded, so nothing is sent twice.']] as const;

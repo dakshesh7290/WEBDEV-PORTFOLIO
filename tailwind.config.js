@@ -1,0 +1,1 @@
+export default {content:['./index.html','./src/**/*.{ts,tsx}'],theme:{extend:{fontFamily:{display:['Unbounded','sans-serif'],sans:['"Instrument Sans"','system-ui','sans-serif']},colors:{ink:'#09090b',char:'#131316',silver:'#d9dde2',chrome:'#8b9099'}}}}

@@ -1,0 +1,20 @@
+# DAKSHESH.
+
+> DAKSHESH. is a one-person digital practice in India offering web development, SEO and digital growth, AI chatbots and business automation.
+
+The site is a single page. Projects are labelled as live, in development, proof or demonstration.
+
+## Services
+
+- [Web Development](/#services): fast, polished websites and online stores
+- [SEO & Digital Growth](/#services): technical SEO, site structure and content
+- [AI & Chatbots](/#services): assistants that answer common questions and hand over to a person
+- [Business Automation](/#services): workflows for scheduling, messaging and tracking
+
+## Projects
+
+- [Projects](/#projects): Cristova Biosciences (live), THE DECOR CULT and PeakDrop (in development), an n8n-style workflow demonstration and an interactive WhatsApp Business chatbot
+
+## Contact
+
+- [Contact](/#contact): WhatsApp, mail and Instagram
